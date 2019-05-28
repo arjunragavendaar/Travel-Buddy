@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Country Explorer</title>
+	<link rel="stylesheet" href="countrystyle.css">
+</head>
+<body>
+	<div class="row">
+	<div class="col-sm-12 col-md-12" id="top1">
+	<a href="index.html"><div id="ie" style="flex-direction: column;position: absolute;left: 10px;top: 3px;">
+		<img src="distance.png" style="height:40px;"/><h4 style="font-family:Comic Sans MS;color:white">T<span style="color: #f05956">Buddy</span></h4>
+	</div></a>
+		<input type="text" name="search" id="s1" style="width:650px;height:40px;border-radius: 20px;margin-top:-250px;font-family:Comic Sans MS;text-align: center;font-size: 30px;" />
+		<button onclick="execute(document.getElementById('s1').value)" name="btn" style="flex-direction: column;position: absolute;top: 150px;width: 30px;border-radius: 20px;width: 80px;background-color: #f05956;color: white;"><span style="align-self: center;">search</span></button>
+		<h1 style="font-family:Comic Sans MS;color:white;flex-direction: column;position: absolute;top: 13px;font-size: 40px;">Travel<span style="color: #f05956">Buddy</span></h1>
+		<img id= "tel" src="telescope.png" style="height:190px;flex-direction: column;position: absolute;top:180px;"/>
+		<div id="fl" style ="width:350px;height:220px;border:1px solid #dadce0;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;background-color: white;display: inline-block;flex-direction: column;position: absolute;top: 200px;border-radius: 10px;display: none;"></div>
+		<h1 id ="cot" style="color: white;font-family:Comic Sans MS;font-size: 30px;position: absolute;top: 415px;display: none;"></h1>
+	<h1 id ="bot" style="color: white;font-family:Comic Sans MS;font-size: 30px;flex-direction: column;position: absolute;top: 380px;">Time for <span style="color:#f05956">HiKiNg!!!!</span></h1>
+	
+	</div>
+  </div>
+  <div class="row">
+  	<div class="col-sm-12 col-md-12" style="display: flex;justify-content: center;align-items: center;">
+  		<h1 style="font-family:Comic Sans MS;font-size: 30px;color: #134073">Features</h1>
+  	</div>
+  </div>
+  
+  <div class="row">
+  <div class="col-sm-12 col-md-4" style="height: auto;display: flex;justify-content: center;">
+  	<div id="lf" style=" border:1px solid #dadce0;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;background-color: #f05956; width:300px;height:250px;border-radius: 20px;">
+  		<h1 style="font-family:Comic Sans MS;font-size: 20px;color:white;padding-left: 110px">overview</h1>
+  		<img src="report.png" style="height: 90px;padding-left: 115px;margin-top: 30px;" /><br>
+  		<b><span style="font-family:Comic Sans MS;font-size: 15px;padding-left: 10px;color: white;align-self: left;">  &nbsp&nbspThis feature projects the important &nbsp&nbsp&nbspcontext of country based on &nbsp&nbsp&nbspcategories such as geographical info &nbsp&nbsp&nbspetc..</span></b>
+
+  	</div>
+  	
+  </div>
+  <div class="col-sm-12 col-md-4" style="height: auto;display: flex;justify-content: center;align-items: center;">
+  	<div id="mdd" style=" border:1px solid #dadce0;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;background-color: white; width:300px;height:250px;border-radius: 20px;">
+  		<h1 style="font-family:Comic Sans MS;font-size: 20px;color:#f05956;padding-left: 110px">Compare</h1>
+  		<img src="presentation.png" style="height: 90px;padding-left: 115px;margin-top: 30px;" /><br>
+  		<b><span style="font-family:Comic Sans MS;font-size: 15px;padding-left: 10px;color: #f05956;align-self: left;">&nbspThis Compare feature hepls the user &nbsp&nbsp&nbspin comparing the countries based on &nbsp&nbsp&nbspvital parameters to obtain the deep &nbsp&nbsp&nbspinsight about countries</span></b>
+  	</div>
+  </div>
+  <div class="col-sm-12 col-md-4" style="height:auto;display: flex;justify-content: center;align-items: center;">
+  	<div id="rh" style=" border:1px solid #dadce0;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;background-color: #f05956; width:300px;height:250px;border-radius: 20px;">
+  		<h1 style="font-family:Comic Sans MS;font-size: 20px;color:white;padding-left: 110px">Analytics</h1>
+  		<img src="analytics.png" style="height: 90px;padding-left: 115px;margin-top: 30px;" /><br>
+  		<b><span style="font-family:Comic Sans MS;font-size: 15px;padding-left: 10px;color: white;align-self: left;">This feature gives the statistical &nbsp&nbspdepiction based on certain parameters &nbsp&nbspsuch as population area ratio &nbsp&nbspetc..using charts</span></b>
+  	</div>
+  </div>
+</div>
+  <script src="country.js"></script>
+</body>
+</html>

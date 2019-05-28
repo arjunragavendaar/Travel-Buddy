@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script >window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}</script>
+
+ <link rel="stylesheet" href="countrystyle.css">
+
+</head>
+<body>
+
+ <div class="row">
+
+<div class="col-sm-12 col-md-12" id="top">
+	<button onclick="goback()" style="flex-direction: column;position: absolute;top: 20px;left: 10px;font-family:Comic Sans MS;background-color:#f05956;color:white;height: 30px;border: 1px solid #f05956;width:40px;border-radius: 20px;">Back</button>
+	<div id="inner" >
+        <div>
+			<h1 id="h" style="color: white;"></h1>
+		</div>
+		<div id="in">
+			
+
+			<img src="" id ="i1" style="height:100%;width:100%;border-radius:100%"/>
+		</div>
+</div>
+
+ </div>
+ </div>
+<div class="row"> 
+		<div class="col-sm-12"></div>
+	</div>
+ <div class="row">
+ 	<div class="col-sm-12 col-md-6" style=" width:670px;
+    height:400px; display: flex;
+    justify-content: center;
+    align-items: center;">
+ 	<div id="side1" >
+ 		<p><b>Overview</b></p>
+ 	<p style="display: inline-block;"><img src="location.png" style="height: 30px;display: inline-block;" />Country: <span id="cty"></span></p>
+    <p "><img src="dial-phone.png" style="height: 30px;display: inline-block;" />Dialing Code: <span id="dialing-code"></span></p>
+        <p "><img src="government.png" style="height: 30px;display: inline-block;" />Capital: <span id="capital"></span></p>
+        <p "><img src="dial.png" style="height: 30px;display: inline-block;" />Code 1: <span id="c1"></span></p>
+        <p "><img src="dial.png" style="height: 30px;display: inline-block;" />Code 2: <span id="c2"></span></p>
+        <p "><img src="pin.png" style="height: 30px;display: inline-block;" />Region: <span id="region"></span></p>
+        <p "><img src="pin.png" style="height: 30px;display: inline-block;" />Sub Region: <span id="subregion"></span></p>
+   </div>
+</div>
+<div class="col-sm-12 col-md-6" style=" width:670px;
+    height:400px; display: flex;
+    justify-content: center;
+    align-items: center;">
+ 	<div id="side2" >
+ 		<p><b>Geographical Info</b></p>
+ 	<p style="display: inline-block;"><img src="population.png" style="height: 30px;display: inline-block;" />Population: <span id="population"></span></p>
+    <p "><img src="servers.png" style="height: 30px;display: inline-block;" />Top Level Domain: <span id="tod"></span></p>
+        <p "><img src="conversation.png" style="height: 30px;display: inline-block;" />Demonym: <span id="de"></span></p>
+        <p "><img src="nn.png" style="height: 30px;display: inline-block;" />Native Name: <span id="nn"></span></p>
+        <p "><img src="globe.png" style="height: 30px;display: inline-block;" />Area: <span id="area"></span></p>
+        <p "><img src="pin.png" style="height: 30px;display: inline-block;" />Gini: <span id="gini"></span></p>
+        <p "><img src="dial.png" style="height: 30px;display: inline-block;" />Numeric Code: <span id="nc"></span></p>
+ </div>
+</div>
+</div>
+
+<div class="row">
+	
+	<div class="col-sm-12 col-md-6" style=" width:660px;
+    height:auto; display: flex;
+    justify-content: center;
+    align-items: center;" >
+		<div id="mis" >
+       <p><b> Compare with another country</b></p><select id="lt" style="height:35px;border:1px solid black;border-radius: 20px;margin-left: 90px;width: 180px;"></select><br>
+         <p style="display: inline-block;"><img src="population.png" style="height: 30px;display: inline-block;" />Population: <span id="pop1"></span> <span id="pop2" style="margin-left: 10px;"></span></p>
+    <p "><img src="servers.png" style="height: 30px;display: inline-block;" />Top Level Domain: <span id="tod1"></span> <span id="tod2" style="margin-left: 10px;"></span></p>
+        <p "><img src="conversation.png" style="height: 30px;display: inline-block;" />Dialing Code: <span id="de1"></span><span id="de2" style="margin-left: 10px;"></span></p>
+        <p "><img src="nn.png" style="height: 30px;display: inline-block;" />Native Name: <span id="nn1"></span><span id="nn2" style="margin-left: 10px;"></span></p>
+        <p "><img src="globe.png" style="height: 30px;display: inline-block;" />Area: <span id="area1"></span><span id="area2" style="margin-left: 10px;"></span></p>
+        <p "><img src="pin.png" style="height: 30px;display: inline-block;" />Gini: <span id="gini1"></span> <span id="gini2" style="margin-left: 10px;"></span></p>
+        <p "><img src="dial.png" style="height: 30px;display: inline-block;" />Numeric Code: <span id="nc1"></span> <span id="nc2" style="margin-left: 10px;"></span></p>
+        <p "><img src="dial.png" style="height: 30px;display: inline-block;" />Code 1: <span id="cd1"></span><span id="cd12" style="margin-left: 10px;"></span></p>
+        <p "><img src="dial.png" style="height: 30px;display: inline-block;" />Code 2: <span id="cd2"></span> <span id="cd22" style="margin-left: 10px;"></span></p>
+		</div>
+		
+	</div>
+	<div class="col-sm-12 col-md-6" style="width: 680px;height: 650px;display: flex;
+    justify-content: center;align-items: center;">
+	<div id="gh">
+		<div id="bc1" style="width: 250px;height:300px;
+    background-color: white; border-radius:20px; margin-left: 10px;"></div><br><br>
+    <div id="bc2" style="width: 250px;height:300px;
+    background-color: white; border-radius:20px;margin-left: 10px;"></div>
+	</div>	
+	</div>
+	
+</div>
+<script src="country_detail.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+	function goback() {
+		window.history.back();
+	}
+</script>
+</body>
+</html>
+
