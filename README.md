@@ -1,1 +1,1 @@
-# Travel-Buddy A simple country explorer App
+# Travel-Buddy A  country explorer App
